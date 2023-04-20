@@ -1,3 +1,7 @@
+![LINE](http://line.coverage.link)
+![BRANCH](http://branch.coverage.link)
+![COMPLEXITY](http://complexity.link)
+
 # :skull: Resume API :skull:
 
 ## :thought_balloon: What is it?

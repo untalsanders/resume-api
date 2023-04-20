@@ -6,5 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ResumeApplicationTests {
     @Test
-    public void contextLoads() {}
+    public void contextLoads() {
+        ResumeApplication.main(new String[] {});
+    }
 }
