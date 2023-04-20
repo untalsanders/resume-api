@@ -1,9 +1,9 @@
-![INSTRUCTION](http://instruction.coverage.link)
+![INSTRUCTION](https://img.shields.io/badge/instruction--coverage-100.00%25-brightgreen.svg)
 ![BRANCH](http://branch.coverage.link)
-![COMPLEXITY](http://complexity.coverage.link)
-![LINE](http://line.coverage.link)
-![METHOD](http://method.coverage.link)
-![CLASS](http://class.coverage.link)
+![COMPLEXITY](https://img.shields.io/badge/complexity-1.00-brightgreen.svg)
+![LINE](https://img.shields.io/badge/line--coverage-100.00%25-brightgreen.svg)
+![METHOD](https://img.shields.io/badge/method--coverage-100.00%25-brightgreen.svg)
+![CLASS](https://img.shields.io/badge/class--coverage-100.00%25-brightgreen.svg)
 
 # :skull: Resume API :skull:
 
