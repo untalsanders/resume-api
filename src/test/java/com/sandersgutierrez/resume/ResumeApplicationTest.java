@@ -1,12 +1,11 @@
-package com.sandersgutierrez.resumeapi;
+package com.sandersgutierrez.resume;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class ResumeApplicationTest {
-
+public class ResumeApplicationTest {
     @Test
     void appHasAGreeting() {
         ResumeApplication classMocked = mock(ResumeApplication.class);

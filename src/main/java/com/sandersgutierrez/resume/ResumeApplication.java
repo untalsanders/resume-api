@@ -1,4 +1,4 @@
-package com.sandersgutierrez.resumeapi;
+package com.sandersgutierrez.resume;
 
 public class ResumeApplication {
     public String getGreeting(String name) {
