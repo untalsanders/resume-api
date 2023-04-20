@@ -1,11 +1,11 @@
 package com.sandersgutierrez.resume;
 
-public class ResumeApplication {
-    public String getGreeting(String name) {
-        return String.format("Hello %s!", name);
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
+public class ResumeApplication {
     public static void main(String[] args) {
-        System.out.println(new ResumeApplication().getGreeting("Sanders"));
+        SpringApplication.run(ResumeApplication.class, args);
     }
 }
