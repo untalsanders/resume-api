@@ -1,12 +1,15 @@
-![LINE](https://img.shields.io/badge/line--coverage-100.00%25-brightgreen.svg)
+![INSTRUCTION](http://instruction.coverage.link)
 ![BRANCH](http://branch.coverage.link)
-![COMPLEXITY](https://img.shields.io/badge/complexity-1.00-brightgreen.svg)
+![COMPLEXITY](http://complexity.coverage.link)
+![LINE](http://line.coverage.link)
+![METHOD](http://method.coverage.link)
+![CLASS](http://class.coverage.link)
 
 # :skull: Resume API :skull:
 
 ## :thought_balloon: What is it?
 
-Resume-API is a REST API based on my career as Software Engineer. 
+Resume-API is a REST API based on my career as a Software Engineer. 
 You will have access to everything information about my laboral 
 experience and educational.
 

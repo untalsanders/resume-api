@@ -53,5 +53,5 @@ jacocoTestCoverageVerification {
 
 jacocoBadgeGenSetting {
     readmePath "$projectDir/README.md"
-    limit = ['instruction': 0, 'branch': 0, 'line': 0, 'method': 0, 'class': 0]
+    limit = ['instruction': 0, 'branch': 0, 'complexity': 0, 'line': 0, 'method': 0, 'class': 0]
 }
