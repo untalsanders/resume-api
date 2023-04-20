@@ -1,6 +1,10 @@
 name: Java CI with Gradle
 
 on:
+  push:
+    branches: [main]
+  pull_requests:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
