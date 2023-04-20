@@ -29,4 +29,18 @@ test {
 
 jacocoTestReport {
     dependsOn test
+    finalizedBy jacocoTestCoverageVerification
+}
+
+jacocoTestCoverageVerification {
+    dependsOn jacocoTestReport
+
+    violationRules {
+        rule {
+            enabled = true
+            limit {
+                minimum = 0.85
+            }
+        }
+    }
 }
