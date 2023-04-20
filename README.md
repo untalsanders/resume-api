@@ -1,6 +1,6 @@
-![LINE](http://line.coverage.link)
+![LINE](https://img.shields.io/badge/line--coverage-100.00%25-brightgreen.svg)
 ![BRANCH](http://branch.coverage.link)
-![COMPLEXITY](http://complexity.link)
+![COMPLEXITY](https://img.shields.io/badge/complexity-1.00-brightgreen.svg)
 
 # :skull: Resume API :skull:
 
