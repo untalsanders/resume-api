@@ -1,5 +1,6 @@
-package com.sandersgutierrez.resume.domain.service;
+package io.github.sandersgutierrez.resume.greeter.domain.service;
 
+import io.github.sandersgutierrez.resume.greeter.domain.service.GreeterService;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +9,7 @@ class GreetingServiceTests {
 
     @Test
     void greetShouldReturnMessageOfGreeting() {
-        GreetingService service = new GreetingService();
+        GreeterService service = new GreeterService();
         assertEquals("Hello Sanders!", service.greet("Sanders"));
     }
 }

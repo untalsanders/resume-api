@@ -1,9 +1,9 @@
-package com.sandersgutierrez.resume.domain.service;
+package io.github.sandersgutierrez.resume.greeter.domain.service;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingService {
+public class GreeterService {
     private static final String TEMPLATE = "Hello %s!";
 
     public String greet(final String name) {

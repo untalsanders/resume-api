@@ -1,5 +1,4 @@
 ![INSTRUCTION](https://img.shields.io/badge/instruction--coverage-100.00%25-brightgreen.svg)
-![BRANCH](http://branch.coverage.link)
 ![COMPLEXITY](https://img.shields.io/badge/complexity-1.00-brightgreen.svg)
 ![LINE](https://img.shields.io/badge/line--coverage-100.00%25-brightgreen.svg)
 ![METHOD](https://img.shields.io/badge/method--coverage-100.00%25-brightgreen.svg)
@@ -10,21 +9,25 @@
 ## :thought_balloon: What is it?
 
 Resume-API is a REST API based on my career as a Software Engineer. 
-You will have access to everything information about my laboral 
-experience and educational.
+You will have access to all the information about my work 
+experiential and educational.
+
+![Context diagram about application](doc/puml/context_diagram.png "Context Diagram")
+
+You can view all information about application here: [Wiki](https://github.com/untalsanders/resume-api/wiki)
 
 ## :question: How can I see or use it?
 
 - You can view it via browser:
 
-[https://sandersgutierrez.github.io/resume](https://sandersgutierrez.github.io/resume)
+[https://untalsanders.github.io/resume](https://untalsanders.github.io/resume)
 
 ## :checkered_flag: How to start?
 
 - Install Java 17, go to [SDKMAN](https://sdkman.io/install) for install SDKMAN.
 
 ```shell
-sdk install java x.y.z-open
+sdk install java x.y.z-vendor
 ```
 
 - Set up JVM default 
@@ -36,7 +39,7 @@ export JAVA_HOME='$HOME/.sdkman/candidates/java/current'
 - Clone this repository
 
 ```shell
-git clone https://github.com/sandersgutierrez/resume-api.git
+git clone https://github.com/untalsanders/resume-api.git
 ```
 
 - Run application

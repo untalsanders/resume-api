@@ -1,4 +1,4 @@
-package com.sandersgutierrez.resume;
+package io.github.sandersgutierrez.resume;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

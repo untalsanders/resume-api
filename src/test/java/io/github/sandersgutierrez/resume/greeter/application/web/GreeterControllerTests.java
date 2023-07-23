@@ -1,6 +1,6 @@
-package com.sandersgutierrez.resume.application.web;
+package io.github.sandersgutierrez.resume.greeter.application.web;
 
-import com.sandersgutierrez.resume.domain.service.GreetingService;
+import io.github.sandersgutierrez.resume.greeter.domain.service.GreeterService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -14,14 +14,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(GreetingController.class)
-class GreetingControllerTests {
+@WebMvcTest(GreeterController.class)
+class GreeterControllerTests {
 
     @Autowired
     private MockMvc mockMvc;
 
     @MockBean
-    private GreetingService service;
+    private GreeterService service;
 
     @Test
     public void shouldReturnCustomMessage() throws Exception {

@@ -1,0 +1,23 @@
+@startuml "Context diagram"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include DEVICONS/angular.puml
+!include DEVICONS/java.puml
+!include DEVICONS/mysql.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/users.puml
+
+Person(client, "Client | Recruiter", "People who need to know about a professional career", $sprite="users")
+
+System_Boundary(c1, "Personal Resume Builder System") {
+    Container(resumeSpa, "Resuma App (SPA)", "angular", "The main interface with which the client interacts", $sprite="angular")
+    Container(resumeApi, "Resuma API (REST)", "Java EE, SpringBoot", "Allows users to consume information of about my professional career", $sprite="java")
+}
+ContainerDb(db, "Database", "PostgreSQL", "Holds info about me", $sprite="postgresql")
+
+Rel(client, resumeSpa, "Uses", "HTTPS")
+Rel(resumeSpa, resumeApi, "Uses", "HTTPS")
+Rel_R(resumeApi, db, "Reads/Writes")
+@enduml
