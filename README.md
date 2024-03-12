@@ -22,7 +22,7 @@ You can view all information about application here: [Wiki](https://github.com/u
 
 [https://untalsanders.github.io/resume](https://untalsanders.github.io/resume)
 
-## :checkered_flag: How to start?
+## :rocket: How to start?
 
 - Install Java 17, go to [SDKMAN](https://sdkman.io/install) for install SDKMAN.
 
@@ -47,3 +47,11 @@ git clone https://github.com/untalsanders/resume-api.git
 ```shell
 ./gradlew bootRun
 ```
+
+## :wolf: Author
+
+- [Sanders Gutiérrez](https://untalsanders.github.io) - System Engineer (Java Developer)
+
+## :unlock: License
+
+This project is open-sourced software licensed under the [MIT licence](LICENCE). Created by [Sanders Gutiérrez](https://untalsanders.github.io).

@@ -1,4 +1,4 @@
-package io.github.sandersgutierrez.resume.greeter.domain.service;
+package io.github.untalsanders.resume.greeter.domain.service;
 
 import org.springframework.stereotype.Service;
 

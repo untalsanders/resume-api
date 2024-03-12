@@ -1,6 +1,5 @@
-package io.github.sandersgutierrez.resume.greeter.domain.service;
+package io.github.untalsanders.resume.greeter.domain.service;
 
-import io.github.sandersgutierrez.resume.greeter.domain.service.GreeterService;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,6 @@
-package io.github.sandersgutierrez.resume.greeter.application.web;
+package io.github.untalsanders.resume.greeter.application.web;
 
-import io.github.sandersgutierrez.resume.greeter.domain.service.GreeterService;
+import io.github.untalsanders.resume.greeter.domain.service.GreeterService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -27,7 +27,7 @@ class GreeterControllerTests {
     public void shouldReturnCustomMessage() throws Exception {
         String name = "Sanders";
         when(service.greet(name)).thenReturn("Hello " + name + "!");
-        this.mockMvc.perform(get("/greeting").param("name", name))
+        this.mockMvc.perform(get("/greet").param("name", name))
             .andDo(print())
             .andExpect(status().isOk())
             .andExpect(content().string(containsString("Hello " + name + "!")));

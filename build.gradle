@@ -13,7 +13,7 @@ plugins {
     id 'com.github.dawnwords.jacoco.badge' version '0.2.4'
 }
 
-group = 'io.github.sandersgutierrez.resume'
+group = 'io.github.untalsanders.resume'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
@@ -29,15 +29,24 @@ dependencies {
     // Production
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+
+    // Production (Runtime)
+    runtimeOnly 'com.h2database:h2'
+
+    // Annotations Processor
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 
     // Test
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'junit', module: 'junit'
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }
 
 application {
-    mainClassName = 'io.github.sandersgutierrez.resume.ResumeApplication'
+    mainClassName = 'io.github.untalsanders.resume.ResumeApplication'
 }
 
 test {

@@ -1,4 +1,4 @@
-package io.github.sandersgutierrez.resume;
+package io.github.untalsanders.resume;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

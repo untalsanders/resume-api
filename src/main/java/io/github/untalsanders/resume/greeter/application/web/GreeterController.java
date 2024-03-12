@@ -1,13 +1,13 @@
-package io.github.sandersgutierrez.resume.greeter.application.web;
+package io.github.untalsanders.resume.greeter.application.web;
 
-import io.github.sandersgutierrez.resume.greeter.domain.service.GreeterService;
+import io.github.untalsanders.resume.greeter.domain.service.GreeterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/greeter")
+@RequestMapping("/greet")
 public class GreeterController {
     private final GreeterService service;
 
