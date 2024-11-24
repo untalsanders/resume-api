@@ -1,9 +1,12 @@
 server:
   servlet:
-    context-path: /
+    context-path: /api
   compression:
     enabled: true
     mime-types: text/html,text/xml,text/css,text/javascript,application/javascript,application/json
     min-response-size: 1024
-  mvc:
-    throw-exception-if-no-handler-found: true
+
+spring:
+  web:
+    resources:
+      add-mappings: false
