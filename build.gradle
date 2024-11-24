@@ -15,8 +15,11 @@ plugins {
 
 group = 'io.github.untalsanders.resume'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_22
+}
 
 repositories {
     mavenCentral()
