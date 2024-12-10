@@ -25,6 +25,10 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    postgresqlVersion = '42.7.3'
+}
+
 dependencies {
     // Development
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -37,6 +41,7 @@ dependencies {
 
     // Production (Runtime)
     runtimeOnly 'com.h2database:h2'
+    runtimeOnly "org.postgresql:postgresql:${postgresqlVersion}"
 
     // Annotations Processor
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'

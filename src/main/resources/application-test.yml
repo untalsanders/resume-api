@@ -1,17 +1,14 @@
+database: postgres
 spring:
   datasource:
-    url: jdbc:h2:mem:resume
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: ${POSTGRES_URL:jdbc:postgresql://127.0.0.1:5432/resume}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASS:12345}
+    driver-class-name: org.postgresql.Driver
   sql:
     init:
       # SQL is written to be idempotent so this is safe
       mode: always
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
   jpa:
     show-sql: true
     defer-datasource-initialization: true
