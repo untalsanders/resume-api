@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.experience.domain;
+package io.github.untalsanders.resume.experience.domain.model;
 
 import java.time.LocalDate;
 

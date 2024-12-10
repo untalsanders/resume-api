@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.experience.infrastructure.persistence.crud;
+package io.github.untalsanders.resume.experience.infrastructure.persistence.repository;
 
 import io.github.untalsanders.resume.experience.infrastructure.persistence.entity.ExperienceEntity;
 import org.springframework.data.repository.CrudRepository;

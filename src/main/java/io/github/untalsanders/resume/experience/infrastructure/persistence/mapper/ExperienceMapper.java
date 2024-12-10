@@ -1,6 +1,6 @@
 package io.github.untalsanders.resume.experience.infrastructure.persistence.mapper;
 
-import io.github.untalsanders.resume.experience.domain.Experience;
+import io.github.untalsanders.resume.experience.domain.model.Experience;
 import io.github.untalsanders.resume.experience.infrastructure.persistence.entity.ExperienceEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
@@ -17,6 +17,7 @@ public interface ExperienceMapper {
         @Mapping(source = "company", target = "company"),
         @Mapping(source = "startDate", target = "startDate"),
         @Mapping(source = "endDate", target = "endDate"),
+        @Mapping(source = "description", target = "description"),
     })
     Experience entityToDomain(Experience experience);
 

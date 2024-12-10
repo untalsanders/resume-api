@@ -1,13 +1,13 @@
-package io.github.untalsanders.resume.experience.infrastructure.persistence;
+package io.github.untalsanders.resume.experience.infrastructure.persistence.repository;
 
-import io.github.untalsanders.resume.experience.domain.Experience;
+import io.github.untalsanders.resume.experience.domain.model.Experience;
 import io.github.untalsanders.resume.experience.domain.repository.ExperienceRepository;
-import io.github.untalsanders.resume.experience.infrastructure.persistence.crud.ExperienceCrudRepository;
 import io.github.untalsanders.resume.experience.infrastructure.persistence.entity.ExperienceEntity;
 import io.github.untalsanders.resume.experience.infrastructure.persistence.mapper.ExperienceMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +23,7 @@ public class ExperienceRepositoryImpl implements ExperienceRepository {
     }
 
     @Override
-    public List<Experience> getAll() {
+    public Collection<Experience> findAll() {
         List<ExperienceEntity> experienceEntityList = (List<ExperienceEntity>) experienceCrudRepository.findAll();
         return experienceMapper.toExperiences(experienceEntityList);
     }
@@ -41,6 +41,11 @@ public class ExperienceRepositoryImpl implements ExperienceRepository {
     @Override
     public Optional<Experience> update(Experience experience) {
         return Optional.empty();
+    }
+
+    @Override
+    public void delete(Experience experience) {
+
     }
 
     @Override

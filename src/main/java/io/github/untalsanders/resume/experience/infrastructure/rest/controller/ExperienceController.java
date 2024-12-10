@@ -1,8 +1,7 @@
-package io.github.untalsanders.resume.experience.application.web.rest;
+package io.github.untalsanders.resume.experience.infrastructure.rest.controller;
 
 import io.github.untalsanders.resume.experience.application.service.ExperienceService;
-import io.github.untalsanders.resume.experience.domain.Experience;
-import io.github.untalsanders.resume.experience.domain.service.ExperienceCrudService;
+import io.github.untalsanders.resume.experience.domain.model.Experience;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/experience")
+@RequestMapping("/experiences")
 public class ExperienceController {
     private final ExperienceService experienceService;
 
@@ -23,7 +22,7 @@ public class ExperienceController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Experience>> getAll() {
-        return new ResponseEntity<>(experienceService.getAll(), HttpStatus.OK);
+    public ResponseEntity<List<Experience>> getAllExperiences() {
+        return new ResponseEntity<>(experienceService.getExperiences(), HttpStatus.OK);
     }
 }

@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "experience")
+@Table(name = "experiences")
 public class ExperienceEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
