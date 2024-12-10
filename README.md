@@ -12,7 +12,7 @@ Resume-API is a REST API based on my career as a Software Engineer.
 You will have access to all the information about my work 
 experiential and educational.
 
-![Context diagram about application](doc/puml/context_diagram.png "Context Diagram")
+![Context diagram about application](docs/puml/context_diagram.png "Context Diagram")
 
 You can view all information about application here: [Wiki](https://github.com/untalsanders/resume-api/wiki)
 
