@@ -6,7 +6,7 @@ buildscript {
 }
 
 plugins {
-    id 'application'
+    id 'java'
     id 'jacoco'
     id 'io.spring.dependency-management' version "${springDepManVer}"
     id 'org.springframework.boot' version "${springBootVer}"
@@ -46,10 +46,6 @@ dependencies {
         exclude group: 'junit', module: 'junit'
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
-}
-
-application {
-    mainClassName = 'io.github.untalsanders.resume.ResumeApplication'
 }
 
 test {
