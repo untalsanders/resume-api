@@ -1,9 +1,9 @@
-package io.github.untalsanders.resume.experience.infrastructure.persistence.repository;
+package io.github.untalsanders.resume.infrastructure.persistence.repository;
 
-import io.github.untalsanders.resume.experience.domain.model.Experience;
-import io.github.untalsanders.resume.experience.domain.repository.ExperienceRepository;
-import io.github.untalsanders.resume.experience.infrastructure.persistence.entity.ExperienceEntity;
-import io.github.untalsanders.resume.experience.infrastructure.persistence.mapper.ExperienceMapper;
+import io.github.untalsanders.resume.domain.model.Experience;
+import io.github.untalsanders.resume.domain.repository.ExperienceRepository;
+import io.github.untalsanders.resume.infrastructure.persistence.entity.ExperienceEntity;
+import io.github.untalsanders.resume.infrastructure.persistence.mapper.ExperienceMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

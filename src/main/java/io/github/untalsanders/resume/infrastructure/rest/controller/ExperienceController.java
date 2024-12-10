@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.experience.infrastructure.rest.controller;
+package io.github.untalsanders.resume.infrastructure.rest.controller;
 
-import io.github.untalsanders.resume.experience.application.service.ExperienceService;
-import io.github.untalsanders.resume.experience.domain.model.Experience;
+import io.github.untalsanders.resume.application.service.ExperienceService;
+import io.github.untalsanders.resume.domain.model.Experience;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.experience.domain.model;
+package io.github.untalsanders.resume.domain.model;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

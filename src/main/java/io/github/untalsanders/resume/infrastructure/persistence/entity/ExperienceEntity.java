@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.experience.infrastructure.persistence.entity;
+package io.github.untalsanders.resume.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

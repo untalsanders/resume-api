@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.experience.domain.usecase;
+package io.github.untalsanders.resume.domain.usecase;
 
-import io.github.untalsanders.resume.experience.domain.exception.ExperienceNotFoundException;
-import io.github.untalsanders.resume.experience.domain.model.Experience;
+import io.github.untalsanders.resume.domain.exception.ExperienceNotFoundException;
+import io.github.untalsanders.resume.domain.model.Experience;
 
 import java.util.Collection;
 import java.util.Optional;

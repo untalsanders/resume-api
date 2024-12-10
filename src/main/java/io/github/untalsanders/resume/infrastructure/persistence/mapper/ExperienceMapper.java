@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.experience.infrastructure.persistence.mapper;
+package io.github.untalsanders.resume.infrastructure.persistence.mapper;
 
-import io.github.untalsanders.resume.experience.domain.model.Experience;
-import io.github.untalsanders.resume.experience.infrastructure.persistence.entity.ExperienceEntity;
+import io.github.untalsanders.resume.domain.model.Experience;
+import io.github.untalsanders.resume.infrastructure.persistence.entity.ExperienceEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

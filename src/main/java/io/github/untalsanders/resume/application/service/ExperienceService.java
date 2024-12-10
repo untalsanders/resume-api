@@ -1,9 +1,9 @@
-package io.github.untalsanders.resume.experience.application.service;
+package io.github.untalsanders.resume.application.service;
 
-import io.github.untalsanders.resume.experience.domain.exception.ExperienceNotFoundException;
-import io.github.untalsanders.resume.experience.domain.model.Experience;
-import io.github.untalsanders.resume.experience.domain.repository.ExperienceRepository;
-import io.github.untalsanders.resume.experience.domain.usecase.RetrieveExperienceUseCase;
+import io.github.untalsanders.resume.domain.exception.ExperienceNotFoundException;
+import io.github.untalsanders.resume.domain.model.Experience;
+import io.github.untalsanders.resume.domain.repository.ExperienceRepository;
+import io.github.untalsanders.resume.domain.usecase.RetrieveExperienceUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

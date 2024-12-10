@@ -54,4 +54,4 @@ git clone https://github.com/untalsanders/resume-api.git
 
 ## :unlock: License
 
-This project is open-sourced software licensed under the [MIT licence](LICENCE). Created by [Sanders Gutiérrez](https://untalsanders.github.io).
+This project is open-sourced software licensed under the [MIT licence](LICENSE). Created by [Sanders Gutiérrez](https://untalsanders.github.io).
