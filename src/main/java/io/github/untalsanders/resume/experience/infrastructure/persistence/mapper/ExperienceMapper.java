@@ -13,7 +13,7 @@ import java.util.List;
 public interface ExperienceMapper {
     @Mappings({
         @Mapping(source = "id", target = "id"),
-        @Mapping(source = "title", target = "title"),
+        @Mapping(source = "jobTitle", target = "jobTitle"),
         @Mapping(source = "company", target = "company"),
         @Mapping(source = "startDate", target = "startDate"),
         @Mapping(source = "endDate", target = "endDate"),

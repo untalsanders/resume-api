@@ -27,30 +27,36 @@ repositories {
 
 ext {
     postgresqlVersion = '42.7.3'
+    lombokVersion = '1.18.34'
+    mapStructVersion = '1.6.3'
 }
 
 dependencies {
-    // Development
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-
     // Production
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+    implementation "org.mapstruct:mapstruct:${mapStructVersion}"
 
-    // Production (Runtime)
+    // Runtime
     runtimeOnly 'com.h2database:h2'
     runtimeOnly "org.postgresql:postgresql:${postgresqlVersion}"
 
+    // Compile
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+
     // Annotations Processor
-    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapStructVersion}"
 
     // Test
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'junit', module: 'junit'
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    // Development
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 test {
