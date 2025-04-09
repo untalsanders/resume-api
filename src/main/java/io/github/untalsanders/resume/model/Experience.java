@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.infrastructure.persistence.entity;
+package io.github.untalsanders.resume.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -14,7 +14,7 @@ import java.util.Objects;
 @RequiredArgsConstructor
 @Entity
 @Table(name = "experiences")
-public class ExperienceEntity implements Serializable {
+public class Experience implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -40,7 +40,7 @@ public class ExperienceEntity implements Serializable {
         Class<?> oEffectiveClass = o instanceof HibernateProxy ? ((HibernateProxy) o).getHibernateLazyInitializer().getPersistentClass() : o.getClass();
         Class<?> thisEffectiveClass = this instanceof HibernateProxy ? ((HibernateProxy) this).getHibernateLazyInitializer().getPersistentClass() : this.getClass();
         if (thisEffectiveClass != oEffectiveClass) return false;
-        ExperienceEntity that = (ExperienceEntity) o;
+        Experience that = (Experience) o;
         return getId() != null && Objects.equals(getId(), that.getId());
     }
 

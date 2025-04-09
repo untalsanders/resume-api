@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.domain.usecase;
+package io.github.untalsanders.resume.usecase;
 
-import io.github.untalsanders.resume.domain.exception.ExperienceNotFoundException;
-import io.github.untalsanders.resume.domain.model.Experience;
+import io.github.untalsanders.resume.exception.ExperienceNotFoundException;
+import io.github.untalsanders.resume.model.Experience;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -13,7 +13,7 @@ public interface RetrieveExperienceUseCase {
      * @param id the id to search for
      * @return the <code>Experience</code> if found
      */
-    Optional<Experience> getExperience(Long id) throws ExperienceNotFoundException;
+    Optional<Experience> getExperienceById(Long id) throws ExperienceNotFoundException;
 
     /**
      * Retrieve all <code>Experience</code>s.

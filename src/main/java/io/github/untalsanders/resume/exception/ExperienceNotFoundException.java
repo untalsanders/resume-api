@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.domain.exception;
+package io.github.untalsanders.resume.exception;
 
 /**
  * A class that extends <code>RuntimeException</code> to customize the error
