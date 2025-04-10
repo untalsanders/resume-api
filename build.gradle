@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVer = '3.4.0'
+        springBootVer = '3.4.4'
         springDepManVer = '1.1.6'
     }
 }
