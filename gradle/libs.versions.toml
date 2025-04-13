@@ -1,0 +1,12 @@
+[versions]
+h2 = "2.3.232"
+lombok = "1.18.34"
+mapstruct = "1.6.3"
+posgres = "42.7.3"
+
+[libraries]
+h2 = { module = "com.h2database:h2", version.ref = "h2" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "posgres" }

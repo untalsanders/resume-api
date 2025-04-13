@@ -37,18 +37,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation "org.mapstruct:mapstruct:${mapStructVersion}"
+    implementation libs.mapstruct
 
     // Runtime
-    runtimeOnly 'com.h2database:h2'
-    runtimeOnly "org.postgresql:postgresql:${postgresqlVersion}"
+    runtimeOnly libs.h2
+    runtimeOnly libs.postgres
 
     // Compile
-    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    compileOnly libs.lombok
 
     // Annotations Processor
-    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
-    annotationProcessor "org.mapstruct:mapstruct-processor:${mapStructVersion}"
+    annotationProcessor libs.lombok
+    annotationProcessor libs.mapstruct.processor
 
     // Test
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
