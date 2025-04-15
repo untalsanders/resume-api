@@ -33,30 +33,36 @@ ext {
 }
 
 dependencies {
-    // Production
+    // Production ------------------------------------------------------------------//
+
+    //-- Spring Boot Dependencies all inherit from the spring-boot-starter-parent --//
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    implementation libs.springdoc.openapi.starter.webmvc.ui
     implementation libs.mapstruct
 
-    // Runtime
+    // Runtime ---------------------------------------------------------------------//
+
+    //-- Data stores and supporting libs --//
     runtimeOnly libs.h2
     runtimeOnly libs.postgres
 
-    // Compile
+    // Compile ---------------------------------------------------------------------//
     compileOnly libs.lombok
 
     // Annotations Processor
     annotationProcessor libs.lombok
     annotationProcessor libs.mapstruct.processor
 
-    // Test
+    // Test ------------------------------------------------------------------------//
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'junit', module: 'junit'
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 
-    // Development
+    // Development -----------------------------------------------------------------//
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
