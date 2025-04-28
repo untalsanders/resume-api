@@ -2,6 +2,7 @@ package com.untalsanders.resume.rest.controller;
 
 import com.untalsanders.resume.model.Experience;
 import com.untalsanders.resume.service.ExperienceService;
+import com.untalsanders.resume.util.Constants;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/experiences")
+@RequestMapping(Constants.ENDPOINT_EXPERIENCE)
 @RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class ExperienceController {
 
