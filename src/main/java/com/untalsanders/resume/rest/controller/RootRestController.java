@@ -1,5 +1,6 @@
 package com.untalsanders.resume.rest.controller;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,6 +12,7 @@ import java.io.IOException;
 @RestController
 @CrossOrigin(exposedHeaders = "errors, content-type")
 @RequestMapping
+@Hidden
 public class RootRestController {
 
     @Value("#{servletContext.contextPath}")
