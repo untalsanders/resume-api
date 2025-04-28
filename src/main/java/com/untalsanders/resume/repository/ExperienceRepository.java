@@ -1,6 +1,6 @@
-package io.github.untalsanders.resume.repository;
+package com.untalsanders.resume.repository;
 
-import io.github.untalsanders.resume.model.Experience;
+import com.untalsanders.resume.model.Experience;
 
 import java.util.Collection;
 import java.util.Optional;

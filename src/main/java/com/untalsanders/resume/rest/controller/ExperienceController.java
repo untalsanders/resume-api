@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.rest.controller;
+package com.untalsanders.resume.rest.controller;
 
-import io.github.untalsanders.resume.model.Experience;
-import io.github.untalsanders.resume.service.ExperienceService;
+import com.untalsanders.resume.model.Experience;
+import com.untalsanders.resume.service.ExperienceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

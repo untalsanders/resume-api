@@ -1,11 +1,10 @@
-package io.github.untalsanders.resume.service;
+package com.untalsanders.resume.service;
 
-import io.github.untalsanders.resume.model.Experience;
-import io.github.untalsanders.resume.repository.ExperienceRepository;
-import io.github.untalsanders.resume.usecase.RetrieveExperienceUseCase;
+import com.untalsanders.resume.model.Experience;
+import com.untalsanders.resume.repository.ExperienceRepository;
+import com.untalsanders.resume.usecase.RetrieveExperienceUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

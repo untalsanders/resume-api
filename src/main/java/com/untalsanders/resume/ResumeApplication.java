@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume;
+package com.untalsanders.resume;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.exception;
+package com.untalsanders.resume.exception;
 
 /**
  * This class represents a custom unchecked exception that is thrown

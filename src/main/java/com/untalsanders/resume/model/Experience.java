@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.model;
+package com.untalsanders.resume.model;
 
 import jakarta.persistence.*;
 import lombok.*;

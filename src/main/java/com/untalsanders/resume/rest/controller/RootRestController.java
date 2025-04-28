@@ -1,4 +1,4 @@
-package io.github.untalsanders.resume.rest.controller;
+package com.untalsanders.resume.rest.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;

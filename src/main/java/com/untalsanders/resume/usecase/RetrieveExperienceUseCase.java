@@ -1,7 +1,7 @@
-package io.github.untalsanders.resume.usecase;
+package com.untalsanders.resume.usecase;
 
-import io.github.untalsanders.resume.exception.ExperienceNotFoundException;
-import io.github.untalsanders.resume.model.Experience;
+import com.untalsanders.resume.exception.ExperienceNotFoundException;
+import com.untalsanders.resume.model.Experience;
 
 import java.util.Collection;
 import java.util.Optional;
