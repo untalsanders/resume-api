@@ -1,3 +1,6 @@
+database:
+  db-engine: h2
+
 spring:
   datasource:
     url: jdbc:h2:mem:resume
@@ -8,6 +11,8 @@ spring:
     init:
       # SQL is written to be idempotent so this is safe
       mode: always
+      schema-locations: classpath*:db/${database.db-engine}/schema.sql
+      data-locations: classpath*:db/${database.db-engine}/data.sql
   h2:
     console:
       enabled: true

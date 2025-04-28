@@ -7,12 +7,6 @@ spring:
     username: ${POSTGRES_USER:postgres}
     password: ${POSTGRES_PASS:12345}
     driver-class-name: org.postgresql.Driver
-  sql:
-    init:
-      # SQL is written to be idempotent so this is safe
-      mode: always
-      schema-locations: classpath*:db/${database.db-engine}/schema.sql
-      data-locations: classpath*:db/${database.db-engine}/data.sql
   jpa:
     show-sql: true
     defer-datasource-initialization: true

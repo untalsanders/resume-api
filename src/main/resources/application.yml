@@ -5,20 +5,12 @@ server:
 
 spring:
   profiles:
-    active: dev
+    active: "dev,spring-data-jpa"
   web:
     resources:
-
       add-mappings: false
-  sql:
-    init:
-      schema-locations: classpath*:db/${database.db-engine}/schema.sql
-      data-locations: classpath*:db/${database.db-engine}/data.sql
   jpa:
     open-in-view: false
-
-database:
-  db-engine: h2
 
 logging:
   level:
