@@ -12,8 +12,8 @@ public class SwaggerConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("Resume API documentation")
-                        .version("1.0.0")
-                        .description("This is the REST API documentation of the Resume backend.")
+                        .version("0.0.1-SNAPSHOT")
+                        .description("This is a REST API to manage and retrieve resume information about a person.")
                 );
     }
 }
