@@ -1,19 +1,19 @@
 buildscript {
     ext {
-        springBootVer = '3.4.4'
-        springDepManVer = '1.1.6'
+        springBootVer = '3.5.3'
     }
 }
 
 plugins {
     id 'java'
     id 'jacoco'
-    id 'io.spring.dependency-management' version "${springDepManVer}"
     id 'org.springframework.boot' version "${springBootVer}"
     id 'com.github.dawnwords.jacoco.badge' version '0.2.4'
 }
 
-group = 'io.github.untalsanders.resume'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.untalsanders.resume'
 version = '0.0.1-SNAPSHOT'
 
 java {
