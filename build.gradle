@@ -76,8 +76,9 @@ jacocoTestReport {
     finalizedBy jacocoTestCoverageVerification
 
     reports {
-        xml.required = true
-        html.required = true
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('reports/jacoco')
     }
 }
 
